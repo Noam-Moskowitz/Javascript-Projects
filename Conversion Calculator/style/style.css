@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    gap: 30px;
+    border: 5px solid #FC6011;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input {
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 200px;
+    border-width: 3px;
+}
+
+.number-input {
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.currency-input {
+    border-left: 1px dashed #FC6011;
+    width: 120px;
+    font-size: 1.2rem;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+}
+
+
+.currency-input::-webkit-calendar-picker-indicator {
+    color: #FC6011;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.number-input:focus,
+.number-input:focus+.input {
+    outline: none;
+    border-color: #FC6011;
+}
+
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.info {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.smaller {
+    font-size: .9rem;
+}

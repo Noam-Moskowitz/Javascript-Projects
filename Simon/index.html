@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="simon.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="startState">
+            <h1>S
+                <span class="highlightGreen">i</span>
+                <span class="highlightRed">m</span>
+                <span class="highlightYellow">o</span>
+                <span class="highlightBlue">n</span>
+            </h1>
+            <button id="btnStart" class="btn">Start Game</button>
+        </div>
+        <div class="board">
+            <div id="green" class="button green"></div>
+            <div id="red" class="button red"></div>
+            <div id="yellow" class="button yellow"></div>
+            <div id="blue" class="button blue"></div>
+            <div id="round" class="round"></div>
+        </div>
+        <div class="scoreBanner">
+            <h2>You did not know the pattern!</h2>
+            <p>Your highscore is: <span class="highscoreReveal"></span></p>
+            <p>Your score was: <span class="scoreReveal"></span></p>
+            <button id="restartBtn" class="btn">Play Again</button>
+        </div>
+    </div>
+
+    <audio id="redSound" src="./audio/red.mp3"></audio>
+    <audio id="greenSound" src="./audio/green.mp3"></audio>
+    <audio id="blueSound" src="./audio/blue.mp3"></audio>
+    <audio id="yellowSound" src="./audio/yellow.mp3"></audio>
+    <div id="output"></div>
+
+    <script defer type="module" src="./main.js"></script>
+</body>
+
+</html>

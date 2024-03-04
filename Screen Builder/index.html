@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בונה מסכים</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="load-window">
+            <form class="loadForm" name="loadForm">
+                <label for="saved-itmes">בחר\י קובץ</label>
+                <select name="saved-itmes" id="saved-itmes" class="select"></select>
+                <div class="button-container">
+                    <input class="btn" type="submit" id="confirmLoad" value="פתח">
+                    <input class="btn" type="button" id="item-delete" value="מחק">
+                </div>
+                <input class="btn" type="button" id="cancelLoad" value="ביטול">
+            </form>
+        </div>
+        <div class="confirm-window">
+            <h2>אתה עומד לנקות את המסך,<br>
+                האם ברצונך לבצע את הפעולה הזו?</h2>
+            <div class="button-container">
+                <button id="confirm" class="btn">כן, נקה</button>
+                <button id="cancel" class="btn">לא, תודה</button>
+            </div>
+        </div>
+        <div class="work-space">
+            <div id="screen"></div>
+        </div>
+        <div class="toolkit">
+            <div class="top-container">
+                <div class="top-button-container">
+                    <button class="btn topBtn" id="save">שמור קובץ</button>
+                    <button class="btn topBtn" id="load">פתח קובץ קיים</button>
+                    <button class="btn topBtn" id="clear">נקה</button>
+                </div>
+                <div class="toolkit-text">
+                    <h1>בונה מסכים</h1>
+                    <p>לורם איםסום דולר שמולר מולר גיכינן</p>
+                </div>
+            </div>
+            <div class="form-container">
+                <form name="designForm" id="designForm">
+                    <div class="form-content">
+                        <div class="input-container">
+                            <label for="elementType">סוג האלמנט</label>
+                            <input type="text" name="elementType" id="elementType">
+                        </div>
+                        <div class="input-container">
+                            <label for="width">רוחב</label>
+                            <input type="text" name="width" id="width">
+                        </div>
+                        <div class="input-container">
+                            <label for="height">גובה</label>
+                            <input type="text" id="height" name="height">
+                        </div>
+                        <div class="color-container">
+                            <div class="input-container">
+                                <label for="backgroundColor">צבע רקע</label>
+                                <input type="color" id="backgroundColor" name="backgroundColor">
+                            </div>
+                            <div class="input-container">
+                                <label for="fColor">צבע הגופן</label>
+                                <input type="color" id="fColor" name="fColor">
+                            </div>
+                        </div>
+                        <div id="source" class="displayNone">
+                            <label for="src">Source</label>
+                            <input type="text" id="src" name="src">
+                        </div>
+                        <div class="input-container">
+                            <label for="content">תוכן</label>
+                            <textarea name="content" id="content" cols="30" rows="5"></textarea>
+                        </div>
+                        <div class="details-container">
+
+                            <details class="details">
+                                <summary>טקסט</summary>
+                                <div class="details-content">
+
+                                    <div class="input-container">
+                                        <label for="fSize">גודל הגופן</label>
+                                        <input type="text" name="fSize" id="fSize">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="textAlign">Text-Align</label>
+                                        <input type="text" name="textAlign" id="textAlign">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="textDecoration">Text-Decoration</label>
+                                        <input type="text" name="textDecoration" id="textDecoration">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="fFamily">סוג גופן</label>
+                                        <select name="fFamily" id="fFamily" class="select">
+                                            <option value="Font Family" placeholder disabled selected>---בחרו סוג
+                                                גופן---
+                                            </option>
+                                            <option value="Georgia">Georgia</option>
+                                            <option value="Times New Roman">Times New Roman</option>
+                                            <option value="Times">Times</option>
+                                            <option value="serifTimes">serifTimes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </details>
+                            <details class="details">
+                                <summary>position & spacing</summary>
+                                <div class="details-content">
+                                    <div class="input-container">
+                                        <label for="Position">Position</label>
+                                        <input type="Position" name="Position" id="Position">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="Top">Top</label>
+                                        <input type="Top" name="Top" id="Top">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="Left">Left</label>
+                                        <input type="Left" name="Left" id="Left">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="padding">Padding</label>
+                                        <input type="padding" name="padding" id="padding">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="margin">Margin</label>
+                                        <input type="margin" name="margin" id="margin">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="display">Display</label>
+                                        <input type="display" name="display" id="display">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="flexDirection">Flex Direction</label>
+                                        <input type="flexDirection" name="flexDirection" id="flexDirection">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="alignItems">Align-Items</label>
+                                        <input type="alignItems" name="alignItems" id="alignItems">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="justifyContent">Justify-Content</label><select name="justifyContent"
+                                            id="justifyContent" class="select">
+                                            <option value="Justify-Content" placeholder disabled selected>---בחר/י---
+                                            </option>
+                                            <option value="center">center</option>
+                                            <option value="end">end</option>
+                                            <option value="start">start</option>
+                                            <option value="left">left</option>
+                                            <option value="right">right</option>
+                                            <option value="space-around">space-around</option>
+                                            <option value="space-between">space-between</option>
+                                            <option value="space-evenly">space-evenly</option>
+                                            <option value="stretch">stretch</option>
+                                        </select>
+                                    </div>
+                            </details>
+                            <details class="details">
+                                <summary>עיצוב</summary>
+                                <div class="details-content">
+                                    <div class="input-container">
+                                        <label for="borderSize">Border Size</label>
+                                        <input type="borderSize" name="borderSize" id="borderSize">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="borderColor">Border Color</label>
+                                        <input type="borderColor" name="borderColor" id="borderColor">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="borderRadius">Border Radius</label>
+                                        <input type="borderRadius" name="borderRadius" id="borderRadius">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="borderStyle">Border Style</label>
+                                        <input type="borderStyle" name="borderStyle" id="borderStyle">
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <input type="submit" value="הוסף" class="btn" id="submit">
+                        <button type="button" id="delete" class="btn">מחק</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>

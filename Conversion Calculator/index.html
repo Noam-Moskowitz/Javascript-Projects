@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montrose FX</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <img src="./images/logo.png" alt="company logo">
+            <div class="input-group">
+                <input id="sell" class="input number-input" type="text">
+                <input id="sellCurrencies" class="input currency-input" type="text" list="currencies">
+                <datalist id="currencies">
+                    <option value=USD selected>United States Of America</option>
+                    <option value=AUD>Australia</option>
+                    <option value=CAD>Canada</option>
+                    <option value=CHF>Switzerland</option>
+                    <option value=EUR>Europe</option>
+                    <option value=GBP>England</option>
+                    <option value=ILS>Israel</option>
+                </datalist>
+            </div>
+            <div class="text-container">
+                <div class="row">
+                    <p>Our Fee:</p>
+                    <p class="info" id="fee"></p>
+                </div>
+                <div class="row">
+                    <p>Your Rate:</p>
+                    <p class="info" id="rate"></p>
+                </div>
+            </div>
+            <div class="input-group">
+                <input id="buy" class="input number-input" type="text">
+                <input id="buyCurrencies" class="input currency-input" type="text" list="currencies">
+                <datalist id="currencies">
+                    <option value=USD></option>
+                    <option value=AUD></option>
+                    <option value=CAD></option>
+                    <option value=CHF></option>
+                    <option value=EUR></option>
+                    <option value=GBP></option>
+                    <option value=ILS></option>
+                </datalist>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/main.js"></script>
+</body>
+
+</html>
