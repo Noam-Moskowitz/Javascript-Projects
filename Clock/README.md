@@ -35,21 +35,6 @@ Welcome to the Clock App! This application offers three features: World Clock, T
    - Pause the stopwatch to freeze the current time.
    - Resume counting when ready, or clear the stopwatch to start fresh.
 
-## Installation
-
-To use the Clock App, follow these steps:
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/your/repository.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd clock-app
-   ```
-
-3. Open `index.html` in your preferred web browser.
 
 ## Technologies Used
 
