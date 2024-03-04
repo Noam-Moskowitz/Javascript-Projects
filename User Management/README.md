@@ -34,21 +34,7 @@ Welcome to the User Management App! This application allows users to register, d
    - Ensure that all required fields in the registration and login forms are filled out correctly.
    - Display error messages if the input is invalid or incomplete.
 
-## Installation
 
-To run the User Management App locally, follow these steps:
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/your/repository.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd user-management-app
-   ```
-
-3. Open `index.html` in your preferred web browser.
 
 ## Project Structure
 
